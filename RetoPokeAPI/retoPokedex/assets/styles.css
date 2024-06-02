@@ -1,0 +1,110 @@
+/* Definición de la fuente personalizada 'Onest' */
+@font-face {
+    font-family: 'Onest';
+    src: url('./fonts/Onest-VariableFont_wght.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo del cuerpo del documento */
+body {
+    background-color: #f0f4f8; /* Color de fondo azul claro */
+}
+
+/* Estilo del badge de número de Pokémon */
+.pokemon-number-badge {
+    position: absolute;
+    top: 9px;
+    color: #ffffff; /* Color del texto blanco */
+    z-index: 2; /* Coloca el elemento por encima de otros elementos */
+}
+
+/* Estilo de los filtros */
+.filters {
+    font-family: 'Onest', sans-serif; /* Usa la fuente personalizada 'Onest' */
+}
+
+/* Estilo del div de fondo */
+.background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2; /* Coloca el elemento detrás de otros elementos */
+    height: 100vh; /* Altura completa de la ventana */
+    width: 100vw; /* Anchura completa de la ventana */
+    background-color: rgba(72, 61, 139, 0.85); /* Color de fondo morado oscuro con transparencia */
+}
+
+/* Estilo de la tarjeta de Pokémon */
+.pokemon-card {
+    font-family: 'Onest', sans-serif; /* Usa la fuente personalizada 'Onest' */
+    border: 1px solid #a0aec0; /* Borde sólido gris azulado */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 25px; /* Margen inferior */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s; /* Transición suave para transformaciones */
+}
+
+/* Efecto de hover para la tarjeta de Pokémon */
+.pokemon-card:hover {
+    transform: scale(1.07); /* Aumenta ligeramente el tamaño al pasar el ratón por encima */
+}
+
+/* Estilo de la imagen de Pokémon dentro de la tarjeta */
+.pokemon-img {
+    max-width: 100%; /* Ancho máximo del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilo de las diferentes badges con sus colores correspondientes */
+.badge-purple {
+    background-color: #6a0dad; /* Púrpura oscuro */
+    color: white;
+}
+
+.badge-brown {
+    background-color: #8b4513; /* Marrón oscuro */
+    color: white;
+}
+
+.badge-sky {
+    background-color: #87ceeb; /* Azul cielo */
+    color: white;
+}
+
+.badge-pink {
+    background-color: #ff69b4; /* Rosa intenso */
+    color: white;
+}
+
+.badge-green {
+    background-color: #32cd32; /* Verde lima */
+    color: white;
+}
+
+.badge-grey {
+    background-color: #708090; /* Gris pizarra */
+    color: white;
+}
+
+.badge-black {
+    background-color: #000000; /* Negro */
+    color: white;
+}
+
+.badge-teal {
+    background-color: #008080; /* Verde azulado */
+    color: white;
+}
+
+.badge-light-pink {
+    background-color: #ffb6c1; /* Rosa claro */
+    color: white;
+}
+.rotate {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
